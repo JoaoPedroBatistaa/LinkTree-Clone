@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: rgb(39,0,65);
+  background: radial-gradient(circle, rgba(39,0,65,1) 0%, rgba(27,6,60,1) 50%, rgba(0,0,0,1) 100%);
+  color: rgb(240, 240, 240);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  font-family: 'DM Sans', sans-serif;
+}
+
+header{
+  width: 95%;
+  max-width: 788px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 12px;
+  margin-top: 15px;
+}
+
+footer {
+  margin-top: 16rem;
+  align-items: center;
+}
+
+.share-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(240, 240, 240);
+}
+
+.share-button:hover {
+  cursor: pointer;
+}
+
+.container {
+  width: 91%;
+  max-width: 680px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(240, 240, 240);
+
+}
+
+.tile {
+  width: 100%;
+  height: 56px;
+  background: rgba(60, 60, 60, 0.5);
+  margin: 7px;
+  border-radius: 13px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+  display: flex;
+  justify-content: space-between;
+}
+
+.tile:hover {
+  transition: cubic-bezier(.07, 1.41, .82, 1.41) 0.2s;
+  transform: scale(1.04);
+}
+
+.tile-share-button {
+  margin: 8px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(52, 52, 52);
+
+}
+
+.image-container {
+  height: 192px;
+  width: 192px;
+  border-radius: 96px;
+  overflow: hidden;
+}
+
+.image-container img {
+  height: 100%;
+
+}
+
+.share-button img {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.tile-share-button img {
+  margin-left: 10px;
+  margin-top: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.tile .icon img {
+  margin-left: 8px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  width: 44px;
+  height: 44px;
+  background-color: rgb(240, 240, 240);
+  border-radius: 13px;
+}
