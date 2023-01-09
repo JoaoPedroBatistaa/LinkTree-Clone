@@ -32,6 +32,10 @@ footer {
   background-color: rgb(240, 240, 240);
 }
 
+.share-button:hover {
+  cursor: pointer;
+}
+
 .container {
   width: 91%;
   max-width: 680px;
