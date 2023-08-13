@@ -36,3 +36,24 @@ async function copyText(e) {
 
 upShareButton.forEach(upShareButton => 
   upShareButton.addEventListener('click', copyText))
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const options = {
+        strings: ["Olá! Sou <strong>João Pedro Batista</strong>, desenvolvedor full stack. Explore meus links, veja meus projetos e contate-me para <strong>trabalharmos juntos</strong>. Vamos criar algo incrível!"],
+        typeSpeed: 45,
+        backSpeed: 25,
+        smartBackspace: true,
+        showCursor: true,
+        cursorChar: '|',
+        loop: false,
+        onComplete: function(self) {
+            // Ocultar o cursor após a digitação ser concluída
+            self.cursor.remove();
+        }
+    };
+
+    const typed = new Typed('#typed-output', options);
+});
+
+
+

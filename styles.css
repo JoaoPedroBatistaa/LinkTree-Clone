@@ -1,8 +1,12 @@
 body {
   margin: 0;
   padding: 0;
-  background: rgb(39,0,65);
-  background: radial-gradient(circle, rgba(39,0,65,1) 0%, rgba(27,6,60,1) 50%, rgba(0,0,0,1) 100%);
+  background-image: url("./assets/back.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: rgb(39, 0, 65);
+  background: radial-gradient(circle, rgba(39, 0, 65, 1) 0%, rgba(27, 6, 60, 1) 50%, rgba(0, 0, 0, 1) 100%); */
   color: rgb(240, 240, 240);
   display: flex;
   align-items: center;
@@ -11,7 +15,7 @@ body {
   font-family: 'DM Sans', sans-serif;
 }
 
-header{
+header {
   width: 95%;
   max-width: 788px;
   display: flex;
@@ -21,8 +25,10 @@ header{
 }
 
 footer {
-  margin-top: 16rem;
+  margin-top: 1.5rem;
   align-items: center;
+
+  padding-bottom: 3rem;
 }
 
 .share-button {
@@ -48,6 +54,7 @@ footer {
 h1 {
   font-size: 25px;
   margin-bottom: 30px;
+
 }
 
 a {
@@ -59,7 +66,7 @@ a {
 .tile {
   width: 100%;
   height: 56px;
-  background: rgba(60, 60, 60, 0.5);
+  background: rgba(32, 32, 32, 0.5);
   margin: 7px;
   border-radius: 13px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -79,20 +86,55 @@ a {
   width: 40px;
   height: 40px;
   border-radius: 20px;
-  background-color: rgb(52, 52, 52);
+  background-color: rgb(26, 26, 26);
 
 }
+
+@keyframes flutuar {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 
 .image-container {
   height: 192px;
   width: 192px;
   border-radius: 96px;
   overflow: hidden;
+  border: 1px solid #000000;
+
+  animation: flutuar 2.5s infinite;
+  /* Aplica a animação */
 }
+
 
 .image-container img {
   height: 100%;
 
+}
+
+@keyframes pulsar {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+
+#whats {
+  animation: pulsar 1.5s infinite;
 }
 
 .share-button img {
@@ -115,6 +157,64 @@ a {
   margin-bottom: 6px;
   width: 44px;
   height: 44px;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(0, 0, 0);
   border-radius: 13px;
 }
+
+.item {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.welcome {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+
+  margin-bottom: 2rem;
+  margin-top: -0.5rem;
+
+}
+
+@media screen and (max-width: 768px) {
+  .welcome {
+    height: 6rem;
+  }
+}
+
+
+.welcome::after {
+  content: '|';
+  /* Efeito do cursor piscando */
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.7rem;
+
+  margin-top: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.socialIcon {
+  height: 18px;
+  width: 18px;
+}
+
+@media screen {}
