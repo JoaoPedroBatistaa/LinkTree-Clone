@@ -40,7 +40,7 @@ upShareButton.forEach(upShareButton =>
   document.addEventListener('DOMContentLoaded', function() {
     const options = {
         strings: ["Olá! Sou <strong>João Pedro Batista</strong>, desenvolvedor full stack. Explore meus links, veja meus projetos e contate-me para <strong>trabalharmos juntos</strong>. Vamos criar algo incrível!"],
-        typeSpeed: 20,
+        typeSpeed: 30,
         backSpeed: 25,
         smartBackspace: true,
         showCursor: true,
